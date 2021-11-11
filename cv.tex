@@ -1,0 +1,84 @@
+\documentclass[helvetica,nologo,openbib,totpages]{europecv} %removed notitle, flagCMYK, replaced logo with nologo
+\usepackage[sfdefault]{noto}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[a4paper,top=1.27cm,left=1cm,right=1cm,bottom=2cm]{geometry}
+%\usepackage[ngerman]{babel}
+\usepackage{url}
+\usepackage{setspace}%package to control the overall spacing
+
+\makeatletter%curriculum vitae
+\renewcommand*\ecvtitle{%taken from definition file ecven.def and adapted to requirement 
+    \ecv@utf{\Large\textbf{C\ecv@kern u\ecv@kern r\ecv@kern r\ecv@kern
+            i\ecv@kern c\ecv@kern u\ecv@kern l\ecv@kern u\ecv@kern m\ecv@kern \,\ecv@kern
+            v\ecv@kern i\ecv@kern t\ecv@kern a\ecv@kern e}}
+}
+\def\ecv@picture[#1]#2{%
+    \def\ecvarg{#2}%
+    \ifx\@empty\ecvarg\renewcommand*{\ecvdrawpicture}{}\else%
+    \renewcommand*{\ecvdrawpicture}{\begin{picture}(80,0)(50,100)\includegraphics[#1]{#2}\end{picture}}%adjust the (0,50) params to fine tune the picture position
+    \fi}%
+\makeatother%
+\setstretch{0.9}% sets the line spacing to 90%
+
+\ecvname{Kamp, Antony}
+\ecvfootername{Antony Kamp}
+\ecvaddress{Paul-Weber Str. 20, 07743 Jena, Germany}
+\ecvtelephone{(+49) 1577 - 4138001}
+\ecvemail{\url{info@antonykamp.de}}
+\ecvhomepage{\url{antonykamp.de}}
+\ecvnationality{German}
+\ecvdateofbirth{6 September 2001}
+\ecvpicture[width=4cm]{pass.jpg}
+
+
+\begin{document}
+    %\selectlanguage{german}
+
+
+    \begin{europecv}
+        \ecvpersonalinfo[5pt]
+        
+        \ecvsection{Education}
+        \ecvitem{2012 - 2020}{Carl-Zeiss Gymnasium, Jena, Abitur}
+        \ecvitem{}{Mathematical-scientific-technical specialized grammar school}
+        \ecvitem{}{with specialized classes from year 9, final grade: 1.3}
+        \ecvitem{2020 - today}{Universität Potsdam, Bachelor of Science}
+        \ecvitem{}{IT-Systems Engineering at the Hasso Plattner Institut}
+        
+        \ecvsection{Practical experience}
+        \ecvitem{June 2017}{Multimedia Center of the Friedrich Schiller Universität, Jena}
+        \ecvitem{}{Internship in the field of technical and applied computer science}
+        \ecvitem{October 2018 - October 2020}{Schiller Eventpersonal GmbH, Berlin}
+        \ecvitem{}{Production of commercials}
+        \ecvitem{June 2017 - June 2020}{Turnsport Gemeinschaft, Jena}
+        \ecvitem{}{Volunteer trainer}
+        \ecvitem{January 2021 - today}{Algorithm Engineering Group, HPI Potsdam}
+        \ecvitem{}{Development of tuning algorithms for quantum devices}
+        \ecvitem{}{and a educational platform about evolutionary algorithms with Blockly}
+        
+        
+        \ecvsection{Skills and interests}
+        \ecvitem{Languages}{German: Mother tongue}
+        \ecvitem{}{English: Good knowledge of spoken and written language}
+        \ecvitem{}{Latin: Latinum in year 10}
+        \ecvitem{Programming Languages}{Java, C++, Python, Javascript}
+        \ecvitem{Hobbies}{Gymnastics}
+        \ecvitem{}{Competitive programming}
+        \ecvitem{}{Production of short films and commercials}
+        \ecvitem{Driving license}{AM, B, L}
+        
+        %\ecvsection{Projekte}
+        %\ecvitem{symfit}{Open Source Projekt}
+        %\ecvitem{}{Erweiterung der Dokumentation und Aktualisierung der Modultests}
+        %\ecvitem{}{\url{https://github.com/tbuli/symfit}}
+        
+        \ecvsection{Awards}
+        \ecvitem{38nd Bundeswettbewerb Informatik}{Prize winner and two-time special prize winner for the best individual idea and the best group performance in the finals}
+        \ecvitem{37nd Bundeswettbewerb Informatik}{2nd prize in the 2nd round}
+        \ecvitem{32nd International Olympiad in Informatics}{Participation in the selection process for the German team}
+        \ecvitem{Carl-Zeiss Gymnasium Jena}{Multiple honors for inner-school commitment and the support of young talents in the field of computer science}
+    
+    \end{europecv}
+
+\end{document}
